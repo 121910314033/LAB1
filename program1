@@ -1,0 +1,19 @@
+#this program is to sum three numbers
+
+#initializing the numbers....
+a=int(input())
+b=int(input())
+c=int(input())
+
+#add the numbers....
+sum=a+b+c
+
+#printing...
+print("Sum = ",sum)
+
+
+OUTPUT
+10
+20
+30
+SUM = 60
