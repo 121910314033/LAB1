@@ -1,0 +1,17 @@
+# Calculating Area of the triangle
+
+#initializing Base and Height.....
+Base=int(input())
+height=int(input())
+
+#Calculating the area.....
+area=(0.5*base*height)
+
+#printing the output.....
+print("AREA = ",area)
+
+
+OUTPUT
+10
+20
+AREA = 100.0
