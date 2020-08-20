@@ -1,0 +1,22 @@
+#Printing previous and next number.
+
+# initializing the number...
+a=int(input())
+
+#initializing the values to given operations....
+b=a+1
+
+c=a-1
+
+#Printing the values....
+
+print("Previous no. = ",c)
+print("Present no. = ",a)
+print("next no. = ",b)
+
+
+OUTPUT
+179
+Previous no. = 178
+Present no. = 179
+next no. = 180
