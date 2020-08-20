@@ -1,0 +1,11 @@
+# printing hello,name!..
+
+#initializing name......
+name=str(input())
+
+#Printing hello and name.....
+print("HELLO,",name,"!")
+
+OUTPUT
+HARRY
+HELLO , HARRY !
