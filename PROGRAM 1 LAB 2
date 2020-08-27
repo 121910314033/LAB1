@@ -1,0 +1,21 @@
+#to find the LCM of two numbers...
+
+a=float(input("Enter first number: "))
+b=float(input("Enter second number: "))
+if (a > b):
+  greater = a
+else:
+  greater = b
+    
+while(True):
+  if((greater % a == 0) and (greater % b == 0)) :
+     lcm = greater
+     break
+     greater += 1
+    
+print("the L.C.M is ", lcm)
+
+OUTPUT.....................
+Enter first number: 10
+Enter second number: 20
+the L.C.M is 20.0
