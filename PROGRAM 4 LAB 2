@@ -1,0 +1,15 @@
+#to find the lcm and gcd of two numbers
+
+import math
+x= int(input('Enter First number:'))
+y = int(input('Enter Second number:'))
+gcd_answer = math.gcd(x, y)
+lcm_answer = x * y/ gcd_ans
+print(lcm_answer)
+print(gcd_answer)
+
+OUTPUT
+Enter First number:48
+Enter Second number:24
+48.0
+24
