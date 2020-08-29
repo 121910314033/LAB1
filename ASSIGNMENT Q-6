@@ -1,0 +1,10 @@
+  
+# To Swapping of two numbers
+
+n,m=input().split()
+n,m=m,n
+print(n,m)
+
+OUTPUT.....
+5 7
+7 5
