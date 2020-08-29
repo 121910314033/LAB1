@@ -1,0 +1,14 @@
+# Check whether given number is Armstrong number or not.
+n=input()
+sum=0
+for i in n:
+    sum = sum + int(i)*int(i)*int(i)
+if str(sum)==n:
+    print("yes")
+else:
+    print('no')
+    
+    
+OUTPUT.......
+153
+yes
