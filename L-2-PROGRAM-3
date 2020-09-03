@@ -6,9 +6,18 @@ def Remove(arr):
     if num not in final:
       final.append(num)
   return final
+   
+arr = [] 
   
-# Main Body
-arr = [2,4,10,20,5,2,20,4]
+# number of elemetns as input 
+n = int(input("Enter number of elements : ")) 
+  
+# iterating till the range 
+for i in range(0, n): 
+    ele = int(input()) 
+  
+    arr.append(ele) # adding the element 
+      
 print(arr)
 print(Remove(arr))
 
