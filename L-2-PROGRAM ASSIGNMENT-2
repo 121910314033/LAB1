@@ -1,0 +1,27 @@
+# To Concatenate multiple arrays.
+
+n=int(input("Enter the number of elements:"))
+array=[]
+for i in range(n):
+  k=int(input("Enter the element:"))
+  array.append(k)
+array2=[]
+for i in range(n):
+  k=int(input("Enter the elements:"))
+  array2.append(k)
+
+array2+=array
+print(array2)
+
+
+OUTPUT.....
+Enter the number of elements:5
+Enter the element:1
+Enter the element:2
+Enter the element:3
+Enter the element:4
+Enter the elements:9
+Enter the elements:8
+Enter the elements:7
+Enter the elements:6
+[9, 8 ,7, 6, 1, 2, 3, 4]
