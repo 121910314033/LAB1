@@ -10,13 +10,17 @@ for i in range(len(matrix)):
     for j in range(len(matrix[0])):
         if matrix[i][j] != 0:
             x = x + 1
+
 sparseMatrix = []
+
 for i in range(len(matrix)):
     for j in range(len(matrix[0])):
         if matrix[i][j] != 0:
             temp = [i, j, matrix[i][j]]
             sparseMatrix.append(temp)
-
+            
+            
+# printing the required matrix
 print(sparseMatrix)
 
 OUTPUT.........
