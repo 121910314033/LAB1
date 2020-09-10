@@ -1,0 +1,23 @@
+# To Represent a sparse matrix
+matrix = [
+    [1, 0, 0, 0, 0],
+    [0, 2, 0, 7, 0],
+    [0, 8, 4, 0, 0],
+    [0, 1, 0, 0, 0]
+]
+x = 0
+for i in range(len(matrix)):
+    for j in range(len(matrix[0])):
+        if matrix[i][j] != 0:
+            x = x + 1
+sparseMatrix = []
+for i in range(len(matrix)):
+    for j in range(len(matrix[0])):
+        if matrix[i][j] != 0:
+            temp = [i, j, matrix[i][j]]
+            sparseMatrix.append(temp)
+
+print(sparseMatrix)
+
+OUTPUT.........
+[[0, 0, 1], [1, 1, 2], [1, 3, 7], [2, 1, 8], [2, 2, 4], [3, 1, 1]]
