@@ -1,0 +1,40 @@
+# To implement a binary search...
+
+def binsearc(x, key):
+
+    start = 0                          
+    end = len(x)
+    while start < end:
+        
+        #going to the middle of array...
+        mid = (start + end) // 2   
+        if x[mid] > key:             
+            end = mid
+        
+        #if the key is found here it will stop here,if not it continues....
+        elif x[mid] < key:              
+            start = mid + 1
+        else:
+            return mid
+
+#taking input ............
+x = input('Enter the sorted list of numbers: ')
+x=x.split()
+x=[int(y) for y in x]
+
+#taking key as input.....
+key = int(input('The number to search for: '))
+
+#searching gor the element in required index.....
+index = binsearc(x, key)
+print("x is found at index",index)
+
+
+OUTPUT:
+
+runfile('C:/Users/KAUSHIK/.spyder-py3/temp.py', wdir='C:/Users/KAUSHIK/.spyder-py3')
+
+Enter the sorted list of numbers: 11 23 30 43 59 61 74
+
+The number to search for: 43
+x is found at index 3
