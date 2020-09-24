@@ -1,0 +1,27 @@
+# To Implement linear search
+
+def linsearch(x, key):
+    
+#lenght of the list
+    for i in range(len(x)):   
+#comapring the elements in list with key value
+        if x[i] == key:       
+            return i
+
+
+#assigning the array
+x =[10,22,36,44,57,66,79]
+x = [int(y) for y in x]
+key =36
+
+#searching and calling the function..........
+index = linsearch(x, key)      
+print(key,"was found at index",index)
+print("if the index printed as none means the list dosent contains given value")
+
+
+OUTPUT:
+runfile('C:/Users/KAUSHIK/.spyder-py3/temp.py', wdir='C:/Users/KAUSHIK/.spyder-py3')
+36 was found at index 2
+if the index printed as none means the list dosent contains given value.
+
