@@ -1,0 +1,31 @@
+# To input from use and searching for key value in array...
+
+   
+    #implementing lenght of the list
+    for i in range(len(x)):
+        
+        #comapring the elements in list with key value
+        if x[i] == key:
+            return i
+
+#taking the input to array....
+
+x =input('Enter the list of numbers: ')
+x=x.split()
+x = [int(y) for y in x]
+
+##inputing the key to search....
+key =int(input("enter number for search:"))
+
+index = linsearch(x, key)
+print(key,"is found at index",index)
+
+
+OUTPUT:
+
+runfile('C:/Users/KAUSHIK/.spyder-py3/temp.py', wdir='C:/Users/KAUSHIK/.spyder-py3')
+
+Enter the list of numbers: 10 23 39 46 58 62 79
+
+enter number for search:58
+58 is found at index 4
