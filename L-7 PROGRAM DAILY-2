@@ -1,6 +1,4 @@
 # Insert a new node at the beginning of this doubly linked list.
-
-
 class Node: 
 
 	
