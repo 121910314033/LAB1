@@ -1,0 +1,38 @@
+# To find the second smallest element in an array:
+
+def find_len(list1):
+  length = len(list1) 
+  list1.sort()  
+  print("Second Smallest element is:", list1[1]) 
+  
+ 
+list1=[12, 45, 2, 41, 31, 10, 8, 6, 4] 
+Largest = find_len(list1)
+
+OUTPUT:
+Second Smallest element is: 4
+
+
+_____________________________________________OR_______________________________________________________
+
+array=[]
+size=int(input("size:"))
+for i in range(size):
+    val=int(input("Enter the number:"))
+    array.append(val)
+array.sort()
+print("second min number =",array[1])
+
+OUTPUT:
+size:5
+
+Enter the number:12
+
+Enter the number:14
+
+Enter the number:10
+
+Enter the number:3
+
+Enter the number:6
+second min number = 6
