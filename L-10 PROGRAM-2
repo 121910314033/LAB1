@@ -1,0 +1,16 @@
+# To implement the paranthesis matching algorithm using stack
+
+def check(string): 
+	brackets = ['()', '{}', '[]'] 
+	while any(x in string for x in brackets): 
+		for br in brackets: 
+			string = string.replace(br, '') 
+	return not string  
+
+string = "{[]{()}}"
+print(string, "-", "Balanced"
+	if check(string) else "Unbalanced")
+  
+  OUTPUT:
+  
+  {[]{()}} - Balanced
