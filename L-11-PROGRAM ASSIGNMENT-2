@@ -1,0 +1,41 @@
+# Create a list with the user input data. Implement selection sort (Recursive).
+
+def x( a1 , i , j ): 
+	if i == j: 
+		return i 
+		
+	
+	k1 = x(a1, i + 1, j) 
+	
+	 
+	return (i if a1[i] < a1[k1] else k1) 
+	
+
+def y(a1, b, index = 0): 
+
+	
+	if index == b: 
+		return -1
+		
+	
+	k1 = x(a1, index, b-1) 
+	
+	
+	if k1 != index: 
+		a1[k1], a1[index] = a1[index], a1[k1] 
+		
+	
+	y(a1, b, index + 1) 
+	
+
+x = [33,4,60] 
+b = len(x)
+y(x, b)
+print("The element after selsection sorting is:")
+for i in x: 
+	print(i, end = ' ') 
+  
+  
+OUTPUT:
+The element after selsection sorting is:
+4 33 60
