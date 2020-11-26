@@ -1,0 +1,25 @@
+#To Create a binary tree and insert at least 12 nodes into it with compile time initialization
+
+class node:
+    def _init_(self,data):
+        self.data=data
+        self.right= None
+        self.left= None
+class BinaryTree:
+    def _init_(self):
+        self.root=None
+        self.root_right = None
+        self.root_left= None
+ob1=BinaryTree()
+
+x=node(33)
+a= node(45)
+b = node(23)
+print(x.data)
+print(a.data)
+print(b.data)
+
+OUTPUT:
+33
+45
+23
