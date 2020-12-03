@@ -1,0 +1,79 @@
+
+#Create a tree with at least 12 nodes and perform in-order, pre-order, and post-order traversalto print the values present at the nodes.
+class Node: 
+    def __init__(self,key): 
+        self.left = None
+        self.right = None
+        self.val = key 
+  
+    def Inorder(root):
+        if root:
+            Inorder(root.left)
+            print(root.val)
+            Inorder(root.right) 
+            
+  
+  
+  
+
+def Postorder(root):
+    if root:
+        Postorder(root.left)
+        Postorder(root.right)
+        print(root.val), 
+  
+  
+
+def Preorder(root):
+    if root: 
+        print(root.val), 
+        Preorder(root.left)
+        Preorder(root.right) 
+  
+  
+x=int(input("enter the number:"))
+root = Node(x)
+a = int(input("enter the number:"))
+root.left      = Node(a)
+b = int(input("enter the number:"))
+root.right     = Node(b)
+b =int(input("enter the number:"))
+
+root.left.left  = Node(b)
+b = int(input("enter the number :"))
+root.left.right  = Node(b) 
+print ("Preorder traversal of binary tree is")
+Preorder(root) 
+  
+print ("\nInorder traversal of binary tree is")
+Inorder(root) 
+  
+print ("\nPostorder traversal of binary tree is")
+Postorder(root) 
+
+OUTPUT:
+enter the number:4
+enter the number:23
+enter the number:33
+enter the number:45
+enter the number b:1981
+Preorder traversal of binary tree is
+4
+23
+33
+1981
+45
+
+Inorder traversal of binary tree is
+4
+23
+1981
+33
+45
+
+Postorder traversal of binary tree is
+4
+1987
+23
+33
+45
